@@ -1,6 +1,6 @@
 {
   "name": "gulp-replaces",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Gulp plugin for replace strings in files.",
   "main": "dist/gulp-replaces.cjs.js",
   "module": "dist/gulp-replaces.esm.js",

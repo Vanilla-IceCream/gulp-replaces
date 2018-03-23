@@ -13,17 +13,17 @@ $ yarn add gulp-replaces -D
 ## Usage
 
 ```js
-// gulpfile.babel.js
-import gulp from 'gulp';
-import replaces from 'gulp-replaces';
+// gulpfile.js
+const gulp = require('gulp');
+const replaces = require('gulp-replaces');
 
 gulp.task('default', () => {
   return gulp
-    .src('./main.js')
+    .src('./src/main.js')
     .pipe(replaces({
       'process.env.NODE_ENV': JSON.stringify('development'),
       'process.env.PORT': 3000,
     }))
-    .pipe(gulp.dest('.'));
+    .pipe(gulp.dest('./dist'));
 });
 ```
