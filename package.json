@@ -1,0 +1,38 @@
+{
+  "name": "gulp-replaces",
+  "version": "0.1.0",
+  "description": "Gulp plugin for replace strings in files.",
+  "main": "dist/gulp-replaces.cjs.js",
+  "module": "dist/gulp-replaces.esm.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "coverage": "cat ./coverage/lcov.info | coveralls",
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vanilla-IceCream/gulp-replaces.git"
+  },
+  "keywords": [
+    "Gulp"
+  ],
+  "author": "Vanilla IceCream",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Vanilla-IceCream/gulp-replaces/issues"
+  },
+  "homepage": "https://github.com/Vanilla-IceCream/gulp-replaces#readme",
+  "dependencies": {
+    "event-stream": "^3.3.4"
+  },
+  "devDependencies": {
+    "babel-jest": "^22.4.3",
+    "babel-preset-env": "^1.6.1",
+    "coveralls": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "jest": "^22.4.3",
+    "regenerator-runtime": "^0.11.1",
+    "rollup": "^0.57.1",
+    "rollup-plugin-buble": "^0.19.2"
+  }
+}
