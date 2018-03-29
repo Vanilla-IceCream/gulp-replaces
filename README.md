@@ -1,6 +1,6 @@
 # gulp-replaces [![Build Status](https://travis-ci.org/Vanilla-IceCream/gulp-replaces.svg?branch=master)](https://travis-ci.org/Vanilla-IceCream/gulp-replaces) [![Coverage Status](https://coveralls.io/repos/github/Vanilla-IceCream/gulp-replaces/badge.svg)](https://coveralls.io/github/Vanilla-IceCream/gulp-replaces)
 
-Gulp plugin for replace strings in files.
+Gulp plugin for replace strings in one pipe in files.
 
 ## Install
 

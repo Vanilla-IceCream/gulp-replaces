@@ -13,9 +13,7 @@ export default (obj) => {
           const search = arr[i][0];
           const replace = arr[i][1];
 
-          const result = search instanceof RegExp
-            ? String(chunk).replace(search, replace)
-            : String(chunk).split(search).join(replace);
+          const result = String(chunk).split(search).join(replace);
 
           chunk = Buffer.from(result);
         }
@@ -29,9 +27,7 @@ export default (obj) => {
         const search = arr[i][0];
         const replace = arr[i][1];
 
-        file.contents = search instanceof RegExp
-          ? Buffer.from(String(file.contents).replace(search, replace))
-          : Buffer.from(String(file.contents).split(search).join(replace));
+        file.contents = Buffer.from(String(file.contents).split(search).join(replace));
       }
     }
 

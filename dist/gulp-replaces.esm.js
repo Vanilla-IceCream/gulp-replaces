@@ -13,9 +13,7 @@ function index (obj) {
           var search = arr[i][0];
           var replace = arr[i][1];
 
-          var result = search instanceof RegExp
-            ? String(chunk).replace(search, replace)
-            : String(chunk).split(search).join(replace);
+          var result = String(chunk).split(search).join(replace);
 
           chunk = Buffer.from(result);
         }
@@ -29,9 +27,7 @@ function index (obj) {
         var search = arr[i][0];
         var replace = arr[i][1];
 
-        file.contents = search instanceof RegExp
-          ? Buffer.from(String(file.contents).replace(search, replace))
-          : Buffer.from(String(file.contents).split(search).join(replace));
+        file.contents = Buffer.from(String(file.contents).split(search).join(replace));
       }
     }
 
