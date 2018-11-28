@@ -1,6 +1,6 @@
 {
   "name": "gulp-replaces",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Gulp plugin for replace strings in one pipe in files.",
   "main": "dist/gulp-replaces.cjs.js",
   "module": "dist/gulp-replaces.esm.js",
@@ -26,13 +26,13 @@
     "event-stream": "3.3.4"
   },
   "devDependencies": {
-    "babel-jest": "^22.4.3",
-    "babel-preset-env": "^1.6.1",
-    "coveralls": "^3.0.0",
-    "gulp-util": "^3.0.8",
-    "jest": "^22.4.3",
-    "regenerator-runtime": "^0.11.1",
-    "rollup": "^0.57.1",
-    "rollup-plugin-buble": "^0.19.2"
+    "babel-jest": "23.6.0",
+    "babel-preset-env": "1.7.0",
+    "coveralls": "3.0.2",
+    "gulp-util": "3.0.8",
+    "jest": "23.6.0",
+    "regenerator-runtime": "0.13.1",
+    "rollup": "0.67.3",
+    "rollup-plugin-buble": "0.19.4"
   }
 }
